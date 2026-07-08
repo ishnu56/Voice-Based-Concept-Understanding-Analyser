@@ -73,7 +73,7 @@ streamlit run app.py
 ## 🌐 Live Demo
 
 **Streamlit App:**
-(Add your Streamlit link here)
+(https://voice-based-concept-understanding-analyser-gckdscqdzdnrwuaohuy.streamlit.app/)
 
 ---
 
