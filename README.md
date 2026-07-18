@@ -1,114 +1,120 @@
-# VBCUA - Assigned Task Module
+# 🎤 Voice Based Concept Understanding Analyser
 
-## Voice-Based Concept Understanding Analyser
+## 📌 Overview
 
-This repository contains the assigned task implementation for the **Voice-Based Concept Understanding Analyser (VBCUA)** project.
+Voice Based Concept Understanding Analyser is an AI-powered speech evaluation system that analyzes spoken English. It converts speech to text, compares it with a reference passage, evaluates grammar and pronunciation, generates similarity scores, provides AI feedback, and creates downloadable reports.
 
-## Assigned Module
+---
 
-**Audio Feature Analysis, Input Handling, Scoring Integration, and Performance Optimization**
+## ✨ Features
 
-## Module Description
+- 🎤 Speech-to-Text using Whisper AI
+- 🧠 Concept Similarity Analysis using Sentence-BERT
+- 📊 Overall Speech Evaluation
+- 📝 Grammar Analysis
+- 💬 AI Feedback and Suggestions
+- 📈 Radar Chart & Pie Chart Visualization
+- 📄 PDF Report Generation
+- 🏆 Performance Certificate Generation
 
-This module handles the audio-processing and evaluation workflow of VBCUA. It accepts student speech audio, validates the file, generates waveform visualization, extracts audio features, detects filler words, calculates semantic similarity, generates a final understanding score, and creates a downloadable PDF evaluation report.
+---
 
-## Features Implemented
-
-- Student audio upload
-- Audio format validation
-- Built-in audio player
-- Audio waveform generation
-- Speech transcription using OpenAI Whisper
-- Semantic similarity using Sentence-BERT
-- Filler word detection
-- Audio feature extraction:
-  - Duration
-  - RMS Energy
-  - Pause Ratio
-  - Zero Crossing Rate
-- Final understanding score
-- Understanding level classification:
-  - Strong Understanding
-  - Moderate Understanding
-  - Poor Understanding
-- AI-generated feedback
-- PDF report generation
-- Runtime measurement for:
-  - Transcription
-  - Embedding computation
-  - Audio feature extraction
-- Streamlit session state support
-- Cached model loading
-- Repeated evaluation support
-
-## Technology Stack
+## 🛠️ Technologies Used
 
 - Python
 - Streamlit
 - OpenAI Whisper
-- Sentence Transformers
-- Librosa
-- Scikit-learn
+- Sentence Transformers (Sentence-BERT)
 - Matplotlib
-- ReportLab
+- NumPy
+- Pandas
+- FPDF
 
-## Project Structure
+---
 
-```text
-VBCUA_Pathan_Sadiya_Assigned_Task/
-├── app.py
-├── concepts.json
-├── requirements.txt
-├── tasks.md
-├── modules/
-│   ├── audio_features.py
-│   ├── filler_detector.py
-│   ├── scoring.py
-│   ├── semantic_analysis.py
-│   ├── speech_to_text.py
-│   ├── ai_feedback.py
-│   └── pdf_generator.py
-├── database/
-│   └── database.py
-├── assets/
-│   └── style.css
-├── uploads/
-│   └── README.md
-├── reports/
-│   └── README.md
-└── docs/
-    ├── PROJECT_TEMPLATE_CHECKLIST.md
-    ├── SYSTEM_REQUIREMENTS.md
-    ├── CONCLUSION.md
-    └── VBCUA_Pathan_Sadiya_Project_Documentation.docx
+## 📂 Project Structure
+
+```
+Voice-Based-Concept-Understanding-Analyser/
+│── app.py
+│── requirements.txt
+│── packages.txt
+│── README.md
+│── assets/
+│── audio/
+│── reports/
+│── utils/
 ```
 
-## How To Run
+---
+
+## 🚀 Installation
+
+### Clone the repository
 
 ```bash
-python -m venv venv
-venv\Scripts\activate
+git clone https://github.com/ishnu56/Voice-Based-Concept-Understanding-Analyser.git
+```
+
+### Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+### Run the application
+
+```bash
 streamlit run app.py
 ```
 
-Then open the local URL shown in the terminal:
+---
 
-```text
-http://localhost:8501
-```
+## 🌐 Live Demo
 
-## Template Documentation
+**Streamlit App:**
+(https://voice-based-concept-understanding-analyser-gckdscqdzdnrwuaohuy.streamlit.app/)
 
-The `docs/` folder contains the assigned-task project documentation prepared according to the provided project template format.
+---
 
-The `tasks.md` file maps the assigned work to the required epics and stories:
+## 📊 Output
 
-- Environment Setup and Configuration
-- Core Logic Development
-- Streamlit UI Implementation
-- Testing, Optimization, and Deployment
+The application provides:
 
-## Note
+- Speech Transcription
+- Reference Text Comparison
+- Similarity Score
+- Grammar Score
+- AI Feedback
+- Speech Statistics
+- Radar Chart
+- Pie Chart
+- PDF Report
+- Performance Certificate
 
-Install FFmpeg if Whisper transcription does not work. The app includes fallback handling for missing model dependencies and invalid audio files.
+---
+
+## 🎯 Future Improvements
+
+- Multi-language support
+- Voice emotion detection
+- Real-time speech evaluation
+- User login system
+- Database integration
+- Dashboard for previous reports
+
+---
+
+## 👨‍💻 Author
+
+**Vishnu**
+
+AI & Machine Learning Engineering Student
+
+SRM University AP
+
+---
+
+## 📜 License
+
+This project is developed for educational purposes.
