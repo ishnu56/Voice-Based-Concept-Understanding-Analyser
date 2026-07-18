@@ -4,10 +4,6 @@
 
 This repository contains the assigned task implementation for the **Voice-Based Concept Understanding Analyser (VBCUA)** project.
 
-## Assigned To
-
-**Pathan Sadiya**
-
 ## Assigned Module
 
 **Audio Feature Analysis, Input Handling, Scoring Integration, and Performance Optimization**
