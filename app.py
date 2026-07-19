@@ -156,6 +156,7 @@ if page == "🎙️ Concept Analyzer":
             
             import os
             report_path = os.path.join("data", "temp_report.pdf")
+            os.makedirs("data", exist_ok=True)
             build_pdf_report(
                 output_path=report_path,
                 concept_name=concept_name,
